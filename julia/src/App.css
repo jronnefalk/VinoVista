@@ -1,0 +1,85 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body {
+  background-color: #efe8e8; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-family: 'Caveat', serif; 
+  margin-bottom: 10px;
+  text-align: center;
+  color: #4d0505; 
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  background-color: #ffffff; 
+  padding: 20px;
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  display: inline-block;
+  margin: 20px;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #411010;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 20px; 
+  padding: 20px; 
+}
+
+.recommendation-item {
+  background-color: #e1cccc; 
+  padding: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  max-width: 300px; 
+  margin: 0 auto; 
+}
+
+.price, .points, .province {
+  color: #5f1e1e; 
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
