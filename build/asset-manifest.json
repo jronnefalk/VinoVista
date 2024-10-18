@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WineRecommendation/static/css/main.889ad40f.css",
+    "main.js": "/WineRecommendation/static/js/main.6d4cdfb6.js",
+    "static/js/787.61dbefd8.chunk.js": "/WineRecommendation/static/js/787.61dbefd8.chunk.js",
+    "index.html": "/WineRecommendation/index.html",
+    "main.889ad40f.css.map": "/WineRecommendation/static/css/main.889ad40f.css.map",
+    "main.6d4cdfb6.js.map": "/WineRecommendation/static/js/main.6d4cdfb6.js.map",
+    "787.61dbefd8.chunk.js.map": "/WineRecommendation/static/js/787.61dbefd8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.889ad40f.css",
+    "static/js/main.6d4cdfb6.js"
+  ]
+}

@@ -23,13 +23,16 @@ function App() {
 
     try {
       // Update the fetch URL to match the Flask route
-      const response = await fetch("http://localhost:5000/api/recommend", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ country, taste }),
-      });
+      const response = await fetch(
+        "https://wine-recommendation.herokuapp.com/api/recommend",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ country, taste }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
