@@ -11,9 +11,7 @@ import os
 nltk.download("punkt")
 nltk.download("averaged_perceptron_tagger")
 
-# Full path to the dataset
-current_dir = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(current_dir, "winemag-data-130k-v2.csv")
+file_path = "winemag-data-130k-v2.csv"
 
 # Load the dataset
 data = pd.read_csv(file_path)
