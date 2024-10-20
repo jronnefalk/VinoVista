@@ -24,7 +24,7 @@ function App() {
     try {
       // Update the fetch URL to match the Flask route
       const response = await fetch(
-        "https://wine-recommendation.herokuapp.com/api/recommend",
+        "https://wine-recommendation-aa56a2bcefc6.herokuapp.com/",
         {
           method: "POST",
           headers: {
