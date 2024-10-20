@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# VinoVista: Wine Recommendation System 🍷
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+VinoVista is an interactive web application that helps users discover new wines based on their preferences. By providing input on country and taste, users receive personalized wine recommendations. This project combines a React frontend with a Flask backend and uses machine learning to generate suggestions from a large dataset of wines.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Personalized Wine Suggestions**: Get recommendations based on your country and taste preferences.
+- **Wine Details**: Information about wine such as name, region, description, price, and rating.
+- **Flask API**: The backend, powered by Flask, processes user input and returns relevant recommendations.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React
+- **Backend**: Flask (Python)
+- **Machine Learning**: Content-based filtering
+- **Deployment**:
+  - Frontend: Vercel
+  - Backend: Heroku
+- **Data Source**: The wine recommendations are based on the [Wine Reviews](https://www.kaggle.com/datasets/zynicide/wine-reviews) dataset from Kaggle, which contains over 130,000 wine reviews with attributes such as price, country, variety, and rating.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Machine Learning Overview
 
-### `npm test`
+VinoVista uses a content-based filtering approach to recommend wines that closely match user preferences. By analyzing attributes such as country, description, and flavor notes from the dataset, the system selects the best wines to recommend. The model processes data from a known wine dataset to generate results based on similarities to the user’s input.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How It Works
 
-### `npm run build`
+1. **User Input**: The user provides a country and a preferred taste.
+2. **Backend Processing**: The Flask API receives the input and uses the wine dataset to find relevant matches.
+3. **Machine Learning**: A content-based filtering approach is applied to find wines that closely match the user's preferences.
+4. **Recommendations**: The system returns a list of recommended wines with details such as price, region, and rating.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend (Flask API)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository.
+2. Navigate to the `flask-backend/` directory and install the necessary dependencies:
+   ```bash
+   pip install -r flask-backend/requirements.txt
+   ```
+3. Run the Flask server locally:
+   ```bash
+   python flask-backend/app.py
+   ```
 
-### `npm run eject`
+### Frontend (React)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Navigate to the project root directory where the package.json file is located.
+2. Install the required dependencies:
+   ```bash
+    npm install
+   ```
+3. Start the React development server:
+   ```bash
+   npm start
+   ```
+4. The frontend will now be running on http://localhost:3000/.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The backend is deployed using Heroku, while the frontend is hosted on Vercel. The two services communicate through API routes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Future Improvements
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Enhanced Filtering**: Allow users to refine the search by wine type, price range etc.
+- **User Authentication**: Let users save their preferences and past recommendations.
+- **Better Recommendation Algorithm**: Explore using collaborative filtering or hybrid models to enhance recommendation accuracy.
