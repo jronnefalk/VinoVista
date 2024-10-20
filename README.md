@@ -29,6 +29,8 @@ VinoVista uses a content-based filtering approach to recommend wines that closel
 3. **Machine Learning**: A content-based filtering approach is applied to find wines that closely match the user's preferences.
 4. **Recommendations**: The system returns a list of recommended wines with details such as price, region, and rating.
 
+![VinoVista](public/vinovista.png)
+
 ## Setup Instructions
 
 ### Backend (Flask API)
