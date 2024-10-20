@@ -1,4 +1,4 @@
-# VinoVista: Wine Recommendation System 🍷
+# VinoVista: Wine Recommendation System using ML 🍷
 
 VinoVista is an interactive web application that helps users discover new wines based on their preferences. By providing input on country and taste, users receive personalized wine recommendations. This project combines a React frontend with a Flask backend and uses machine learning to generate suggestions from a large dataset of wines.
 
